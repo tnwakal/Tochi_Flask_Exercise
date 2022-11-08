@@ -1,6 +1,24 @@
-{% block content %}
+<style>
+    h1{
+        text-align: center;
+        text-shadow: 20px;
+    }
+</style>
 <h1>Register</h1>
 <h4>Enter Student Information below</h4>
 <!--Form to request user's name-->
+<form action="/studentDetails" method="POST" target="">
+    <label for="name">Enter name:
+        <input type="text" name="name" id="name">
+    </label>
+    <label for="organisation">Enter organization:
+        <select id="organisation" name="organisation">
+            <option value="Girls Who Code">Girls Who Code</option>
+            <option value="NSBE">NSBE</option>
+            <option value="SHPE">SHPE</option>
+            <option value="Association of Computing Machinery">Association of Computing Machinery</option>
+        </select>
+    </label>
+    <input type="submit" value="Register">
+</form>
 
-{% endblock %}

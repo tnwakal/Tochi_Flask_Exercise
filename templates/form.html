@@ -1,4 +1,27 @@
-{% block content %}
-<h1>Home</h1>
+<html>
+<style>
+     h1{
+        text-align: center;
+        text-shadow: 20px;
+        
+    }
 
-{% endblock %}
+    body{
+        margin: 30px 100px 100px 100px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    
+    form{
+        border-color: bisque;
+        border-style: dashed;
+    }
+</style>
+<h1>Home</h1>
+<h4>Enter an Integer value:</h4>
+<form action="/result" method="POST" target="">
+    <label for="number">Enter a number:</label>
+    <input type="text" name="number" id="number">
+    <input type="submit" value="Submit">
+</form>
+</html>
+
